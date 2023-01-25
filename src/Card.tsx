@@ -125,21 +125,19 @@ export default function BasicCard(props: Props) {
                 )}
               </>
             </div>
-            <div className="flex font-bold ">
+            <div className="flex pt-2  font-bold ">
               {props.startDate != null && DateConversion(props.startDate)}
               {props.startDate != null && "-"}
               {props.dueDate != null && DateConversion(props.dueDate)}
             </div>
 
-            <Typography sx={{ mb: 1.5 }} color="text.secondary"></Typography>
-            <Typography variant="body2"></Typography>
-            <div className="flex flex-row justify-end">
+            <div className="flex flex-row pt-3 justify-end">
               {props.avatar &&
                 props.avatar.map((avatar: number) => {
                   return (
                     <img
                       key={avatar}
-                      className=" -mx-px  rounded-xl w-8 h-8"
+                      className=" -mx-px  rounded-full w-7 h-7"
                       src={users[avatar - 1]}
                     ></img>
                   );

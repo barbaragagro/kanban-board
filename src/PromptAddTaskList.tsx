@@ -42,14 +42,14 @@ export default function FormDialog(props: any) {
         +
       </Card>
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Add New TaskList</DialogTitle>
+        <DialogTitle>Add New Task List</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            To create new TaskList, please enter the name of the TaskList here.
+            To create new Task List, please enter the name of the Task List here.
           </DialogContentText>
           <input
             onChange={handleChange}
-            placeholder="New TaskList Name"
+            placeholder="New Task List Name"
             className=" focus:outline-indigo-600 border-2 border-gray-300 rounded-md w-full h-9 py-6 px-4 mt-4"
           ></input>
         </DialogContent>

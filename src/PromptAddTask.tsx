@@ -37,10 +37,10 @@ export default function PromptAddTask(props: any) {
         + Add a Task
       </button>
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Add New TaskList</DialogTitle>
+        <DialogTitle>Add New Task</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            To create new TaskList, please enter the name of the TaskList here.
+            To create new Task, please enter the name of the Task here.
           </DialogContentText>
           <input
             onChange={handleChange}
